@@ -76,7 +76,17 @@ vim.keymap.set("i", "<C-j>", "<Esc>bf(dlwPbi", { desc = "barf back" })
 vim.keymap.set("i", "<C-k>", "<Esc>f)dlbPbi", { desc = "slurp forward" })
 vim.keymap.set("i", "<C-l>", "<Esc>f)dlwPBi", { desc = "barf forward" })
 
--- vim.(keymap).set("x", "<M-a>", "<Plug>SlurpUpDown")
+-- remap delete all markers
+vim.keymap.set("n", "<leader>MM", ":delm!<CR>", { desc = "delete all marks" })
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>MN",
+  ':execute "delm " . nr2char(getchar())<CR>',
+  { noremap = true, silent = true }
+)
+-- nnoremap dm :execute 'delmarks '.nr2char(getchar())<CR>
+
+-- vim.(keymap.)set("x", "<M-a>", "<Plug>SlurpUpDown")
 -- vim.keymap.set("x", "<M-e>", "<Plug>BarfUpDown")
 -- vim.keymap.set("n", "<M-a>", "<Plug>SlurpForward")
 -- vim.keymap.set("n", "<M-e>", "<Plug>BarfForward")
