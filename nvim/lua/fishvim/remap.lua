@@ -103,3 +103,7 @@ vim.api.nvim_set_keymap(
 -- vim.keymap.set("v", "<", "<gv")
 -- vim.keymap.set("n", ">", ">>")
 -- vim.keymap.set("n", "<", "<<")
+
+vim.keymap.set("n", "<leader>pp", "<Plug>RestNvim", { desc = "run request under cursor" })
+vim.keymap.set("n", "<leader>pi", "<Plug>RestNvimPreview", { desc = "preview the request CURL command" })
+vim.keymap.set("n", "<leader>po", "<Plug>RestNvim", { desc = "re-run last request" })
