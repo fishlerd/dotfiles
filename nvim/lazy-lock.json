@@ -40,6 +40,7 @@
   "noice.nvim": { "branch": "main", "commit": "0cbe3f88d038320bdbda3c4c5c95f43a13c3aa12" },
   "nui.nvim": { "branch": "main", "commit": "cbd2668414331c10039278f558630ed19b93e69b" },
   "nvim": { "branch": "main", "commit": "07679af1af4f446655682ee2557b5840ac551504" },
+  "nvim-cheatsh": { "branch": "main", "commit": "449f5b59b90426c4e5c34e97999b91268c0e46f5" },
   "nvim-cmp": { "branch": "main", "commit": "97dc716fc914c46577a4f254035ebef1aa72558a" },
   "nvim-dap": { "branch": "master", "commit": "405df1dcc2e395ab5173a9c3d00e03942c023074" },
   "nvim-dap-go": { "branch": "main", "commit": "36abe1d320cb61bfdf094d4e0fe815ef58f2302a" },
