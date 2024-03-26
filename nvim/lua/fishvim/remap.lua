@@ -64,17 +64,17 @@ vim.keymap.set("n", "<leader>aa", "ciw()<Esc>PB", { desc = "Word Surround Parent
 -- vim.api.nvim_command("normal! F(")
 -- vim.api.nvim_command("normal! dlbP")
 
--- Map a key to the function
-vim.keymap.set("n", "<leader>ah", "bf(dlbPb", { desc = "slurp back" })
-vim.keymap.set("n", "<leader>aj", "mmbf(dlwPb`m", { desc = "barf back" })
-vim.keymap.set("n", "<leader>ak", "mmf)dlbPb`m", { desc = "slurp forward" })
--- vim.keymap.set("n", "<leader>al", "f)dlwPB", { desc = "barf forward" })
-vim.keymap.set("n", "<leader>al", "mmf)dlwPB`m", { desc = "barf forward" })
-
-vim.keymap.set("i", "<C-h>", "<Esc>bf(dlbPbi", { desc = "slurp back" })
-vim.keymap.set("i", "<C-j>", "<Esc>bf(dlwPbi", { desc = "barf back" })
-vim.keymap.set("i", "<C-k>", "<Esc>f)dlbPbi", { desc = "slurp forward" })
-vim.keymap.set("i", "<C-l>", "<Esc>f)dlwPBi", { desc = "barf forward" })
+-- -- Map a key to the function
+-- vim.keymap.set("n", "<leader>ah", "bf(dlbPb", { desc = "slurp back" })
+-- vim.keymap.set("n", "<leader>aj", "mmbf(dlwPb`m", { desc = "barf back" })
+-- vim.keymap.set("n", "<leader>ak", "mmf)dlbPb`m", { desc = "slurp forward" })
+-- -- vim.keymap.set("n", "<leader>al", "f)dlwPB", { desc = "barf forward" })
+-- vim.keymap.set("n", "<leader>al", "mmf)dlwPB`m", { desc = "barf forward" })
+--
+-- vim.keymap.set("i", "<C-h>", "<Esc>bf(dlbPbi", { desc = "slurp back" })
+-- vim.keymap.set("i", "<C-j>", "<Esc>bf(dlwPbi", { desc = "barf back" })
+-- vim.keymap.set("i", "<C-k>", "<Esc>f)dlbPbi", { desc = "slurp forward" })
+-- vim.keymap.set("i", "<C-l>", "<Esc>f)dlwPBi", { desc = "barf forward" })
 
 -- remap delete all markers
 vim.keymap.set("n", "<leader>MM", ":delm!<CR>", { desc = "delete all marks" })
@@ -84,26 +84,7 @@ vim.api.nvim_set_keymap(
   ':execute "delm " . nr2char(getchar())<CR>',
   { noremap = true, silent = true }
 )
--- nnoremap dm :execute 'delmarks '.nr2char(getchar())<CR>
 
--- vim.(keymap.)set("x", "<M-a>", "<Plug>SlurpUpDown")
--- vim.keymap.set("x", "<M-e>", "<Plug>BarfUpDown")
--- vim.keymap.set("n", "<M-a>", "<Plug>SlurpForward")
--- vim.keymap.set("n", "<M-e>", "<Plug>BarfForward")
--- vim.keymap.set("n", "<M-A>", "<Plug>SlurpBackward")
--- vim.keymap.set("n", "<M-E>", "<Plug>Bar()fBackward")
--- vim.keymap.set("n", "<M-q>", "<Plug>SplitJoin")
--- vim.keymap.set("x", "<M-q>", "<Plug>SplitJoinVisual")
--- vim.keymap.set("n", "<M-Q>", "<Plug>SplitJoinRemove")
--- vim.keymap.set("x", "<M-Q>", "<Plug>SplitJoinRemoveVisual")
--- vim.keymap.set("n", "<M-s>", "<Plug>SplitJoinSplit")
--- vim.keymap.set("x", "<M-s>", "<Plug>SplitJoinSplitVisual")
--- vim.keymap.set("n", "<M-S>", "<Plug>SplitJoinJoin")
--- vim.keymap.set("v", ">", ">gv")
--- vim.keymap.set("v", "<", "<gv")
--- vim.keymap.set("n", ">", ">>")
--- vim.keymap.set("n", "<", "<<")
-
-vim.keymap.set("n", "<leader>pp", "<Plug>RestNvim", { desc = "run request under cursor" })
-vim.keymap.set("n", "<leader>pi", "<Plug>RestNvimPreview", { desc = "preview the request CURL command" })
-vim.keymap.set("n", "<leader>po", "<Plug>RestNvim", { desc = "re-run last request" })
+-- vim.keymap.set("n", "<leader>pp", "<Plug>RestNvim", { desc = "run request under cursor" })
+-- vim.keymap.set("n", "<leader>pi", "<Plug>RestNvimPreview", { desc = "preview the request CURL command" })
+-- vim.keymap.set("n", "<leader>po", "<Plug>RestNvim", { desc = "re-run last request" })
