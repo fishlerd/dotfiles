@@ -6,3 +6,4 @@ vim.opt.winbar = "%=%m %f" -- Show file name and modified status in the status l
 -- vim.opt.wildignorecase = true -- Ignore case when searching with wildcards
 -- vim.opt.wildmenu = true -- Show a menu when tab completing
 -- vim.opt.wildmode = "longest:full,full" -- Tab complete the longest common string and show a menu
+vim.opt.wildmode = "full"
