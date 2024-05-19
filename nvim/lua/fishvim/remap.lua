@@ -46,9 +46,9 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>S", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>vc", "<cmd>e ~/.config/nvim/lua/fishvim/remap.lua<CR>")
-vim.keymap.set("n", "<leader>vi", "<cmd>e ~/.config/nvim/lua/fishvim/init.lua<CR>")
-vim.keymap.set("n", "<leader>vs", "<cmd>e ~/.config/nvim/lua/fishvim/set.lua<CR>")
+vim.keymap.set("n", "<leader>vq", "<cmd>e ~/.config/nvim/lua/fishvim/remap.lua<CR>")
+vim.keymap.set("n", "<leader>vw", "<cmd>e ~/.config/nvim/lua/fishvim/init.lua<CR>")
+vim.keymap.set("n", "<leader>ve", "<cmd>e ~/.config/nvim/lua/fishvim/set.lua<CR>")
 -- vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 -- vim.keymap.set("n", "<leader><leader>", function()
@@ -98,3 +98,9 @@ vim.api.nvim_set_keymap(
 -- vim.keymap.set("n", "<leader>nh", function()
 --   require("noice").cmd("history")
 -- end)
+
+-- remap vsplit and split
+-- vim.keymap.set("n", "<leader>\\", "<cmd>vsplit<CR>", { desc = "vsplit" })
+vim.keymap.set("n", "<leader>-", "<cmd>split<CR>", { desc = "split" })
+-- remap localleader
+-- vim.g.maplocalleader = "\\"
