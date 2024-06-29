@@ -56,10 +56,10 @@ vim.keymap.set("n", "<leader>ve", "<cmd>e ~/.config/nvim/lua/fishvim/set.lua<CR>
 -- end)
 
 -- surrounding words
-vim.keymap.set("n", "<leader>aq", 'ciw""<Esc>PB', { desc = "Word Surround Quotes" })
-vim.keymap.set("n", "<leader>aa", "ciw()<Esc>PB", { desc = "Word Surround Parent" })
-vim.keymap.set("n", "<leader>as", "ciw[]<Esc>PB", { desc = "Word Surround Parent" })
-vim.keymap.set("n", "<leader>ad", "ciw{}<Esc>PB", { desc = "Word Surround Parent" })
+vim.keymap.set("n", "<leader>wq", 'ciw""<Esc>PB', { desc = "Word Surround Quotes" })
+vim.keymap.set("n", "<leader>wa", "ciw()<Esc>PB", { desc = "Word Surround Parent" })
+vim.keymap.set("n", "<leader>ws", "ciw[]<Esc>PB", { desc = "Word Surround Parent" })
+vim.keymap.set("n", "<leader>ww", "ciw{}<Esc>PB", { desc = "Word Surround Parent" })
 
 -- slurp and barf manually
 
@@ -91,6 +91,14 @@ vim.api.nvim_set_keymap(
 -- vim.keymap.set("n", "<leader>pi", "<Plug>RestNvimPreview", { desc = "preview the request CURL command" })
 -- vim.keymap.set("n", "<leader>po", "<Plug>RestNvim", { desc = "re-run last request" })
 
+vim.keymap.set("n", "<leader>na", function()
+  require("noice").cmd("all")
+end)
+
+vim.keymap.set("n", "<leader>nl", function()
+  require("noice").cmd("log")
+end)
+--
 -- vim.keymap.set("n", "<leader>nl", function()
 --   require("noice").cmd("last")
 -- end)

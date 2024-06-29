@@ -21,6 +21,7 @@ return {
       "tsx",
       "vim",
       "yaml",
+      "zig",
     },
   },
 }
