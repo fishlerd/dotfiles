@@ -7,9 +7,18 @@ end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 -- remap localleader
-vim.g.maplocalleader = "'"
+-- vim.g.maplocalleader = "'"
 
 require("lazy").setup({
+  -- {
+  --   "nvim-lua/plenary.nvim", -- A utility plugin; change to any plugin you have or `vimtex` itself
+  --   priority = 300, -- Load last to ensure this config runs after everything else
+  --   config = function()
+  --     -- Example: Re-map keys to vimtex actions
+  --     vim.keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>", { noremap = true, silent = true })
+  --     vim.keymap.set("n", "<leader>li", "<cmd>VimtexInfo<CR>", { noremap = true, silent = true })
+  --   end,
+  -- },
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },

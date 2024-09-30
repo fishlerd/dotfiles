@@ -108,7 +108,11 @@ end)
 -- end)
 
 -- remap vsplit and split
--- vim.keymap.set("n", "<leader>\\", "<cmd>vsplit<CR>", { desc = "vsplit" })
+vim.keymap.set("n", "<leader>\\", "<cmd>vsplit<CR>", { desc = "vsplit" })
 vim.keymap.set("n", "<leader>-", "<cmd>split<CR>", { desc = "split" })
 -- remap localleader
 -- vim.g.maplocalleader = "\\"
+
+vim.keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>li", "<cmd>VimtexInfo<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>lv", "<cmd>VimtexView<CR>", { noremap = true, silent = true })
