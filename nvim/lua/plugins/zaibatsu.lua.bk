@@ -1,0 +1,10 @@
+return {
+  "codethread/zaibatsu.nvim",
+  priority = 1000, -- load it early
+  config = function()
+    require("zaibatsu").setup({
+      -- you can tweak settings here if needed
+    })
+    vim.cmd.colorscheme("zaibatsu")
+  end,
+}

@@ -10,3 +10,5 @@ vim.opt.wildmode = "full"
 
 -- -- remap localleader
 -- vim.g.maplocalleader = ","
+
+vim.cmd.colorscheme("zaibatsu")

@@ -1,7 +1,9 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 require("fishvim")
+require("notebook").setup()
 require("notify").setup({
+  merge_duplicates = true,
   stages = "fade_in_slide_out",
   timeout = 5000,
   top_down = false,
@@ -49,6 +51,13 @@ dap.configurations.clojure = {
     },
   },
 }
+
+colorscheme = "zaibatsu"
+vim.api.nvim_set_hl(0, "Pmenu", { bg = "#1e1e2e" })
+-- vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#7aa2f7" })
+-- vim.api.nvim_set_hl(0, "PmenuSel", { bg = "#3e4452" }) -- selected item
+-- vim.api.nvim_set_hl(0, "PmenuThumb", { bg = "#5c6370" }) -- scrollbar thumb
+-- vim.api.nvim_set_hl(0, "PmenuSbar", { bg = "#282c34" }) -- scrollbar bar
 
 -- vim.g.rainbow_active = 1
 -- colorscheme = "night-owl"
