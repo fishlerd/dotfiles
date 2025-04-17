@@ -15,16 +15,24 @@ config.colors = {
 	-- background = "#1a1a20", -- override the background color only
 }
 
--- config.colors = {
--- 	foreground = "#d0d0d0",
--- 	background = "1c1c1c",
--- 	cursor_bg = "#d0d0d0",
--- 	cursor_fg = "#1c1c1c",
--- 	selection_bg = "#44475a",
--- 	selection_fg = "#f8f8f2",
--- 	ansi = { "#1c1c1c", "#ff5f5f", "#5fff87", "#ffff87", "#5f87ff", "#ff87ff", "#5fffff", "#ffffff" },
--- 	brights = { "#444444", "#ff8787", "#87ffaf", "#ffffaf", "#87afff", "#ffafff", "#87ffff", "#ffffff" },
--- }
+config.colors = {
+	-- foreground = "#d0d0d0",
+	-- background = "1c1c1c",
+	-- cursor_bg = "#d0d0d0",
+	-- cursor_fg = "#1c1c1c",
+	-- selection_bg = "#44475a",
+	-- selection_fg = "#f8f8f2",
+	-- ansi = { "#1c1c1c", "#ff5f5f", "#5fff87", "#ffff87", "#5f87ff", "#ff87ff", "#5fffff", "#ffffff" },
+	-- brights = { "#444444", "#ff8787", "#87ffaf", "#ffffaf", "#87afff", "#ffafff", "#87ffff", "#ffffff" },
+	foreground = "#c7c7c7",
+	background = "#000000",
+	cursor_bg = "#f5b77d",
+	cursor_fg = "#feffff",
+	selection_bg = "#464c91",
+	selection_fg = "#f4f4f4",
+	ansi = { "#616161", "#f08978", "#c3f884", "#fefdc8", "#afd4fa", "#f295f7", "#d0d1fa", "#f1f1f1" },
+	brights = { "#8e8e8e", "#f6c6bf", "#ddfbc0", "#fefdd9", "#c8e2fc", "#f5b5f9", "#e5e6fc", "#feffff" },
+}
 
 -- change font
 config.font = wezterm.font("MesloLGS NF", { weight = "Regular", stretch = "Normal" })

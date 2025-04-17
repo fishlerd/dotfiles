@@ -49,6 +49,8 @@ vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true })
 vim.keymap.set("n", "<leader>vq", "<cmd>e ~/.config/nvim/lua/fishvim/remap.lua<CR>")
 vim.keymap.set("n", "<leader>vw", "<cmd>e ~/.config/nvim/lua/fishvim/init.lua<CR>")
 vim.keymap.set("n", "<leader>ve", "<cmd>e ~/.config/nvim/lua/fishvim/set.lua<CR>")
+vim.keymap.set("n", "<leader>va", "<cmd>e ~/.aerospace.toml<CR>")
+vim.keymap.set("n", "<leader>vs", "<cmd>e ~/.wezterm.lua<CR>")
 -- vim.keymap.set("n", "<leader>mr", "<cmd>CellularAutomaton make_it_rain<CR>")
 
 -- vim.keymap.set("n", "<leader><leader>", function()
@@ -60,6 +62,9 @@ vim.keymap.set("n", "<leader>wq", 'ciw""<Esc>PB', { desc = "Word Surround Quotes
 vim.keymap.set("n", "<leader>wa", "ciw()<Esc>PB", { desc = "Word Surround Parent" })
 vim.keymap.set("n", "<leader>ws", "ciw[]<Esc>PB", { desc = "Word Surround Parent" })
 vim.keymap.set("n", "<leader>ww", "ciw{}<Esc>PB", { desc = "Word Surround Parent" })
+
+-- set vertical split with diff
+vim.keymap.set("n", "<leader>vd", ":vert diffsplit<Space>", { noremap = true, desc = "vdiff" })
 
 -- slurp and barf manually
 

@@ -205,55 +205,68 @@ alt-shift-period = 'mode remote'
 # run = ["layout floating"]
 # # run = "move-node-to-workspace 1"
 
-# [[on-window-detected]]
-# if.app-id = 'com.github.wez.wezterm'
-# run = "move-node-to-workspace w"
+[[on-window-detected]]
+if.app-id = 'com.github.wez.wezterm'
+run = "move-node-to-workspace W"
 # run = ["layout floating"]
 
+# mail
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 # run = ["layout floating"]
 run = "move-node-to-workspace 1"
 
-# [[on-window-detected]]
-# if.app-id = 'com.apple.Safari'
+# safari
+[[on-window-detected]]
+if.app-id = 'com.apple.Safari'
 # run = ["layout floating"]
-# run = "move-node-to-workspace 2"
+run = "move-node-to-workspace Q"
 
+# firefox
 [[on-window-detected]]
 if.app-id = 'org.mozilla.firefox'
-run = ["layout floating"]
+run = ["layout floating", "move-node-to-workspace F"]
 
+# finder
 [[on-window-detected]] # run = "move-node-to-workspace 4"
 if.app-id = 'com.apple.finder'
 # run = ["layout floating"]
 run = "move-node-to-workspace 4"
 
+# whatapp
 [[on-window-detected]]
 if.app-id = 'net.whatsapp.WhatsApp'
 # run = ["layout floating"]
 run = "move-node-to-workspace 2"
 
+# chatGPT
 [[on-window-detected]]
 if.app-id = 'com.openai.chat'
 run = "move-node-to-workspace C"
 
+# spotify
 [[on-window-detected]]
 if.app-id = 'com.spotify.client'
 run = "move-node-to-workspace S"
 
+# python
 [[on-window-detected]]
 if.app-id = 'org.python.python'
 run = "layout floating"
 # run = "move-node-to-workspace E"
 # run = ["layout floating", "move-node-to-workspace E"]
 
+# remote desktop
 [[on-window-detected]]
 if.app-id = 'com.microsoft.rdc.macos'
 # run = "move-node-to-workspace E"
 # run = ["layout floating"]
 run = ["layout floating", "move-node-to-workspace R"]
 
+# daisy disk
+[[on-window-detected]]
+if.app-id = 'com.daisydiskapp.DaisyDisk'
+run = "layout floating"
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -285,6 +298,7 @@ esc = ['reload-config', 'mode main']
 s = ['exec-and-forget open -a /Applications/Spotify.app', 'mode main']
 w = ['exec-and-forget open -a /Applications/WhatsApp.app', 'mode main']
 b = ['exec-and-forget open -a /Applications/Brave\ Browser.app', 'mode main']
+c = ['exec-and-forget open -a /Applications/ChatGPT.app', 'mode main']
 
 [mode.remote.binding]
 backtick = 'mode main'
